@@ -608,6 +608,8 @@ export default {
           {
             data: [120, 200, 150, 80, 70, 110, 130],
             type: "bar",
+            barMaxWidth: "60%",
+            barMinWidth: "20%",
             data: [
               {
                 value: "120",
