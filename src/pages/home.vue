@@ -8,7 +8,7 @@
     <div class="rightData">
       <!-- header标题 -->
       <div class="header">
-        <h2>医共体信息统计平台</h2>
+        <span>医共体信息统计平台</span>
       </div>
       <!-- 图表区 -->
       <div class="main">
@@ -23,7 +23,7 @@
               </span>
             </div>
             <!-- 上半部分 -->
-            <div class="cardBox">
+            <dv-border-box-10 class="cardBox">
               <div class="row">
                 <div class="col-md-6">
                   <div style="height: 280px" id="pie1"></div>
@@ -32,16 +32,17 @@
                   <div style="height: 280px" id="pie2"></div>
                 </div>
               </div>
-            </div>
+            </dv-border-box-10>
+
             <!-- 下半部分 -->
-            <div class="cardBox bottomChart">
+            <dv-border-box-10 class="cardBox bottomChart">
               <div style="height: 100%" id="stack"></div>
-            </div>
+            </dv-border-box-10>
             <!-- <div class="row cardBox"></div> -->
           </div>
           <!-- 中间家庭签约人数、地图部分 -->
           <div class="col-md-4 middleMap">
-            <h3 class="perNums">家庭医生签约人数</h3>
+            <div class="perNums">家庭医生签约人数</div>
             <div class="amount">
               <span
                 class="numItem"
@@ -64,13 +65,13 @@
               </span>
             </div>
             <!-- 上半部分 -->
-            <div class="cardBox">
+            <dv-border-box-10 class="cardBox">
               <div style="height: 100%" id="radar"></div>
-            </div>
+            </dv-border-box-10>
             <!-- 下半部分 -->
-            <div class="cardBox bottomChart">
+            <dv-border-box-10 class="cardBox bottomChart">
               <div style="height: 100%" id="columnar"></div>
-            </div>
+            </dv-border-box-10>
           </div>
         </div>
       </div>
@@ -156,8 +157,8 @@ export default {
       var option = {
         title: {
           text: "居民健康档案",
-          left: "left",
-          top: "10",
+          left: "10",
+          top: "15",
           textStyle: {
             color: "rgba(0,230,245,0.7)",
           },
@@ -264,8 +265,8 @@ export default {
       var option = {
         title: {
           text: "临检中心",
-          left: "15",
-          top: "10",
+          left: "25",
+          top: "15",
           textStyle: {
             color: "rgba(0,230,245,0.7)",
           },
@@ -282,7 +283,7 @@ export default {
             { name: "研发", max: 52000 },
             { name: "市场", max: 25000 },
           ],
-          radius: "70%",
+          radius: "60%",
           nameGap: 10,
           splitNumber: 4,
           axisLine: {
@@ -343,8 +344,8 @@ export default {
       var option = {
         title: {
           text: "影像中心",
-          left: "15",
-          top: "10",
+          left: "25",
+          top: "15",
           textStyle: {
             color: "rgba(0,230,245,0.7)",
           },
@@ -364,9 +365,9 @@ export default {
         // },
         grid: {
           left: "20",
-          right: "40",
-          top: "50",
-          bottom: "10",
+          right: "50",
+          top: "60",
+          bottom: "40",
           containLabel: true,
         },
         xAxis: [
@@ -555,8 +556,8 @@ export default {
       var option = {
         title: {
           text: "双向转诊",
-          left: "15",
-          top: "10",
+          left: "25",
+          top: "15",
           textStyle: {
             color: "rgba(0,230,245,0.7)",
           },
@@ -566,9 +567,9 @@ export default {
         },
         grid: {
           left: "20",
-          right: "20",
-          top: "50",
-          bottom: "10",
+          right: "50",
+          top: "60",
+          bottom: "40",
           containLabel: true,
         },
         xAxis: {
@@ -617,7 +618,7 @@ export default {
                   fontStyle: "italic",
                   fontWeight: "bold",
                 },
-                itemStyle: { color: "rgba(0,230,245,0.7)" },
+                itemStyle: { color: "rgba(55, 162, 255,0.6)" },
               },
               {
                 value: "200",
@@ -628,7 +629,7 @@ export default {
                   fontStyle: "italic",
                   fontWeight: "bold",
                 },
-                itemStyle: { color: "rgba(0,230,245,0.7)" },
+                itemStyle: { color: "rgba(55, 162, 255,0.6)" },
               },
               {
                 value: "150",
@@ -639,7 +640,7 @@ export default {
                   fontStyle: "italic",
                   fontWeight: "bold",
                 },
-                itemStyle: { color: "rgba(0,230,245,0.7)" },
+                itemStyle: { color: "rgba(55, 162, 255,0.6)" },
               },
               {
                 value: "80",
@@ -650,7 +651,7 @@ export default {
                   fontStyle: "italic",
                   fontWeight: "bold",
                 },
-                itemStyle: { color: "rgba(0,230,245,0.7)" },
+                itemStyle: { color: "rgba(55, 162, 255,0.6)" },
               },
               {
                 value: "70",
@@ -661,7 +662,7 @@ export default {
                   fontStyle: "italic",
                   fontWeight: "bold",
                 },
-                itemStyle: { color: "rgba(0,230,245,0.7)" },
+                itemStyle: { color: "rgba(55, 162, 255,0.6)" },
               },
               {
                 value: "110",
@@ -672,7 +673,7 @@ export default {
                   fontStyle: "italic",
                   fontWeight: "bold",
                 },
-                itemStyle: { color: "rgba(0,230,245,0.7)" },
+                itemStyle: { color: "rgba(55, 162, 255,0.6)" },
               },
               {
                 value: "130",
@@ -683,7 +684,7 @@ export default {
                   fontStyle: "italic",
                   fontWeight: "bold",
                 },
-                itemStyle: { color: "rgba(0,230,245,0.7)" },
+                itemStyle: { color: "rgba(55, 162, 255,0.6)" },
               },
             ],
           },
@@ -720,7 +721,6 @@ export default {
 }
 .page .leftNav {
   width: 14%;
-  height: 100vh;
   background: #1b315e;
 }
 .leftNav p {
@@ -740,13 +740,18 @@ export default {
   width: 96%;
 }
 .rightData .header {
-  height: 80px;
+  height: 120px;
   padding-top: 40px;
-  background: rgba(0, 100, 150, 0.8);
+  background: url("../assets/images/header.png");
+  background-size: contain;
 }
-.header h2 {
-  color: #fcfcfc;
+.header span {
+  font-size: 36px;
   text-align: center;
+  background: linear-gradient(to bottom, #ecf0f8, #668bcc);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 5px #668bcc;
 }
 .main {
   margin-top: 20px;
@@ -766,7 +771,6 @@ export default {
 }
 .cardBox {
   height: 280px;
-  border: 1px solid aqua;
   margin-top: 20px;
 }
 .bottomChart {
@@ -774,8 +778,14 @@ export default {
 }
 
 .perNums {
+  font-size: 26px;
+  padding: 5px 0;
   color: aqua;
-  margin-bottom: 30px;
+  background: url("../assets/images/mapHead.png") no-repeat;
+  background-size: contain;
+}
+.amount {
+  margin-top: 30px;
 }
 .countName {
   font-size: 20px;

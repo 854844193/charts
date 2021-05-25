@@ -6,8 +6,11 @@ import router from './router'
 import './assets/css/font.css'
 import './assets/css/iconfont.css'
 import './assets/css/bootstrap.min.css'
+import dataV from '@jiaminghi/data-view'
 let echarts = require('echarts/echarts.all')
- 
+
+Vue.use(dataV)
+
 Vue.config.productionTip = false
 Vue.prototype.$echarts = echarts
 
