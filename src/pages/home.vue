@@ -365,9 +365,9 @@ export default {
         // },
         grid: {
           left: "20",
-          right: "50",
+          right: "30",
           top: "60",
-          bottom: "40",
+          bottom: "20",
           containLabel: true,
         },
         xAxis: [
@@ -567,9 +567,9 @@ export default {
         },
         grid: {
           left: "20",
-          right: "50",
+          right: "30",
           top: "60",
-          bottom: "40",
+          bottom: "20",
           containLabel: true,
         },
         xAxis: {
